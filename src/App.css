@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: #1E90FF;
+  --secondary-color: #11119b;
+  --background-color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: "Poppins", sans-serif;
+}
+
+.bg-black{
+    background-color: var(--background-color);
+}
+
+.blue-Line{
+    content: "";
+    max-width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.aboutText p{
+    max-width: 98%;
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+}
+
+.about-margin{
+    margin: 100px 0;
+}
+
+.about-h1{
+    font-size: calc(1.575rem + 3.9vw);
+    color: white;
+}
+
+.heading{
+    font-size: calc(1.2rem + 2.7vw);
+    color: white;
+}
+
+.about-p{
+    font-size: calc(1.3rem + .6vw);
+}
+
+.profile-wrapper {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 25px rgba(0, 217, 245, 0.6);
+  transition: 0.3s ease;
+  background: linear-gradient(270deg, #00f5a0, #00d9f5, #9b5cff);
+  background-size: 600% 600%;
+  animation: gradientMove 6s ease infinite;
+}
+
+.profile-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Hover Glow Effect */
+.profile-wrapper:hover {
+  box-shadow: 0 0 40px rgba(155, 92, 255, 0.9),
+              0 0 60px rgba(0, 245, 160, 0.7);
+  transform: scale(1.05);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn-primary:hover{
+    background-color: var(--secondary-color)!important;
+}
+
+
+/*--------PROJECT PAGE--------*/
+.header-p{
+    font-size: calc(1rem + .3vw);
+}
+
+.transform-card{
+    transition: all 0.3s ease;
+    background-color: #0a0a0a !important;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.transform-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: icon animation on hover */
+.transform-card i {
+  transition: all 0.3s ease;
+}
+
+.transform-card:hover i {
+  transform: rotate(10deg) scale(1.2);
+  color: #0d6efd; /* Bootstrap primary */
+}
+
+/*--------FOOTER------------*/
+.footerDivider{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background-color: var(--primary-color);
+}
