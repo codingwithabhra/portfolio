@@ -6,7 +6,7 @@ export const projects = [
     technologies: ["React", "Node", "Express", "MongoDB", "Bootstrap"],
     hostedLink: "https://myshoppingapp-five.vercel.app/",
     githubLink: "https://github.com/codingwithabhra/mobileapp",
-    imageUrl: "https://res.cloudinary.com/dajxlecl6/image/upload/v1780471053/mobile_mock-up-2_i6hnin.jpg",
+    imageUrl: "https://res.cloudinary.com/dajxlecl6/image/upload/v1780473219/mobile_mock-up-4_jxklnn.jpg",
   },
   {
     id: 2,
